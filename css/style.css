@@ -1,0 +1,244 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    /* text-align: left; */
+}
+
+.pad-5 {
+    padding: 70px 10px 70px 70px;
+}
+
+#All-content {
+    margin-left: 350px;
+    width: 65%;
+    position: relative;
+}
+
+.sidebar {
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 100px;
+}
+
+.sidebar ul a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.collapse {
+    margin-left: -100px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    color: honeydew;
+}
+
+.sidebar img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 100px;
+    border: 10px solid #ccc;
+    text-align: center;
+}
+
+.none {
+    display: none;
+}
+
+.icons i,
+.tools-icon i {
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.icons i:hover {
+    color: brown;
+}
+
+.headers h1 {
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+#about .headers h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+
+}
+
+
+#experience p {
+    /* width: 70%; */
+    margin: 40px 0;
+}
+
+#experience h2,
+#education h2,
+#skills h2,
+#interest h2,
+#awards h2 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+#experience h3,
+#education h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#experience h4,
+#education h4,
+#skills h4 {
+    color: gray;
+}
+
+#awards i {
+    padding-right: 10px;
+    color: gold;
+}
+
+@media (max-width: 760px) {}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+
+    #sidebar .sidebar .navbar-toggler {
+        z-index: 2;
+        position: absolute;
+        border: 2px solid #fff;
+        display: flex;
+        justify-content: center;
+        right: 5%;
+        top: 20%;
+        color: #fff;
+    }
+
+    #sidebar .sidebar .navbar-toggler-icon {
+        color: #fff;
+    }
+
+    #All-content {
+        margin-left: 0;
+        width: 100%;
+        position: static;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 20vh;
+        position: sticky;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .sidebar ul a {
+
+        font-size: 1em;
+        color: #fff;
+
+        padding-top: 0;
+    }
+
+    .collapse {
+        margin-left: -100px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+
+    .sidebar img {
+        display: none;
+    }
+
+    .pad-5 {
+        padding: 50px 0 50px 30px;
+    }
+
+
+
+    /* .navbar img {
+        display: none;
+
+    } */
+
+    .icons i,
+    .tools-icon i {
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    .headers h1 {
+        font-weight: 700;
+        font-size: 4rem;
+        margin-top: 40px;
+    }
+
+    #about .headers h3 {
+        font-weight: 500;
+        font-size: 1.2rem;
+
+    }
+
+
+    #experience p {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #experience h2,
+    #education h2,
+    #skills h2,
+    #interest h2,
+    #awards h2 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    #experience h3,
+    #education h3 {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    #experience h4,
+    #education h4,
+    #skills h4 {
+        color: gray;
+        font-size: 1rem;
+    }
+}
